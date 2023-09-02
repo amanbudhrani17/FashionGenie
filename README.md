@@ -83,7 +83,7 @@ Image 1 | Image 2 | Image 3 | Image 4
 
 ### Recommended Images
 
-![Image 1](data\reccomeded_images\461814374003.jpg) | ![Image 2](data\reccomeded_images\461387599003.jpg) | ![Image 3](data\reccomeded_images\469220574004.jpg) | ![Image 4](data\reccomeded_images\469194455005.jpg)
+![Image 1](data/reccomeded_images/461814374003.jpg) | ![Image 2](data\reccomeded_images\461387599003.jpg) | ![Image 3](data\reccomeded_images\469220574004.jpg) | ![Image 4](data\reccomeded_images\469194455005.jpg)
 :---: | :---: | :---: | :---:
 Image 1 | Image 2 | Image 3 | Image 4
 
