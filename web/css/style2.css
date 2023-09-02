@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins-medium';
+}
+
+header {
+  background-color: var(--primary-color);
+  height: 64px;
+}
+header .nav-container{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 100%;
+  max-width: 1248px;
+  margin: 0 auto;
+}
+header .nav-container .logo {
+  display: flex;
+  min-width: 137px;
+  justify-content: flex-end;
+}
+header .nav-container .logo img{
+  width: 75px;
+}
+
+header .search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+header .search .search-container{
+  width: 540px;
+  height: 36px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
+  display: flex;
+}
+header .search .search-container input {
+  width: calc(100% - 32px);
+  padding: 16px;
+  outline: none;
+  border: none;
+}
+header .search .search-container button {
+  width: 36px;
+  height: 100%;
+  padding: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+header .login {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+header .login button {
+  width: 140px;
+  padding: 5px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+header .become-seller {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header .more{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+header .more svg {
+  margin-left: 8px;
+  rotate: -90deg;
+}
+
+header .cart {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  color: white;
+}
+header .cart svg {
+  margin-right: 8px;
+}
+
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1497D4,;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.upload-input {
+  width: 50%;
+  padding: 20% 0; /* Creates a square shape */
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.wrapper{
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.wrapper h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #1497D4;
+}
+.wrapper form{
+  margin-top: 30px;
+}
+.wrapper form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #1497D4;
+}
+form .policy{
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #1497D4;
+  cursor: pointer;
+}
+.input-box.button input:hover{
+  background: #1497D4,;
+}
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h3 a{
+  color: #1497D4,;
+  text-decoration: none;
+}
+form .text h3 a:hover{
+  text-decoration: underline;
+}

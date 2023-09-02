@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4E9DE7;
+        }
+
+        h1 {
+            color: white;
+            font-size: 36px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .heading {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+        .card {
+            flex: 1;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 170px; /* Adjust card width */
+            height: 260px; /* Adjust card height */
+            background-color: white; /* Updated card color */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+        .card img {
+            max-width: 90%; /* Adjust the max-width property */
+            max-height: 90%; /* Adjust the max-height property */
+        
+        }
+        .card p {
+            margin: 10px 0;
+            color: black; /* Set paragraph text color to white */
+
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hi {
+            font-weight: bold; /* Make the text bold */
+            text-decoration: none; /* Remove underlines */
+        }
+
+        .cards a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Who's <span style="color: #FFD301">shopping?</span></h1>
+        <div class="cards">
+            <a class="card" href="Chat.html">
+                <img src="Images/nisheet.jpg" alt="Nisheet">
+                <p class="hi">Nisheet</p>
+            </a>
+            <a class="card" href="guest.html">
+                <img src="Images/Guest.png" alt="Guest User">
+                <p class="hi">Guest User</p>
+            </a>
+            <a class="card" href="third_user.html">
+                <img src="Images/addUser.png" alt="Third User">
+                <p class="hi">Add User</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

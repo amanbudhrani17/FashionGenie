@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Your head content -->
+    <link rel="stylesheet" href="style6.css" />
+
+</head>
+<body>
+    <div class="product-container">
+        <!-- The existing div you want to remove -->
+       
+    </div>
+
+    <script >
+      // Sample product data
+      var products = [
+              { imageSrc: "myImages/1.jpg", name: "Product 1 Name" },
+              { imageSrc: "myImages/2.jpg", name: "Product 2 Name" },
+              { imageSrc: "myImages/3.jpg", name: "Product 3 Name" },
+              { imageSrc: "myImages/4.jpg", name: "Product 4 Name" },
+              { imageSrc: "myImages/5.jpg", name: "Product 5 Name" },
+              { imageSrc: "myImages/6.jpg", name: "Product 6 Name" },
+              { imageSrc: "myImages/7.jpg", name: "Product 7 Name" },
+              { imageSrc: "myImages/8.jpg", name: "Product 8 Name" },
+              { imageSrc: "myImages/9.jpg", name: "Product 9 Name" },
+              { imageSrc: "myImages/10.jpg", name: "Product 10 Name" },
+              { imageSrc: "myImages/11.jpg", name: "Product 11 Name" },
+              { imageSrc: "myImages/12.jpg", name: "Product 12 Name" },
+              { imageSrc: "myImages/13.jpg", name: "Product 13 Name" },
+              { imageSrc: "myImages/14.jpg", name: "Product 14 Name" },
+              { imageSrc: "myImages/15.jpg", name: "Product 15 Name" },
+              { imageSrc: "myImages/16.jpg", name: "Product 16 Name" },
+              { imageSrc: "myImages/17.jpg", name: "Product 17 Name" },
+              { imageSrc: "myImages/18.jpg", name: "Product 18 Name" },
+              { imageSrc: "myImages/19.jpg", name: "Product 19 Name" },
+              { imageSrc: "myImages/20.jpg", name: "Product 20 Name" },
+            ];
+
+
+// Get the product container
+var productContainer = document.querySelector('.product-container');
+
+// Loop through the products and create product cards
+products.forEach(function(product) {
+    var productCard = document.createElement('div');
+    productCard.className = 'product-card';
+
+    var productImage = document.createElement('img');
+    productImage.className = 'product-image';
+    productImage.src = product.imageSrc;
+    productImage.alt = product.name;
+
+    var productName = document.createElement('p');
+    productName.className = 'product-name';
+    productName.textContent = product.name;
+
+    var buttonsDiv = document.createElement('div');
+    buttonsDiv.className = 'buttons';
+
+    var addToCartButton = document.createElement('button');
+    addToCartButton.className = 'button add-to-cart';
+    addToCartButton.textContent = 'Add to Cart';
+
+    var buyNowButton = document.createElement('button');
+    buyNowButton.className = 'button buy-now';
+    buyNowButton.textContent = 'Buy Now';
+
+    buttonsDiv.appendChild(addToCartButton);
+    buttonsDiv.appendChild(buyNowButton);
+
+    productCard.appendChild(productImage);
+    productCard.appendChild(productName);
+    productCard.appendChild(buttonsDiv);
+
+    productContainer.appendChild(productCard);
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+
+      
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    button,
+    input,
+    select,
+    textarea {
+      font-family: "Poppins Medium";
+    }
+
+    body {
+      background-image: url('Images/bg.jpg');
+      background-size: cover;
+      background-position: -200px 0; /* Shifting the image 50 pixels to the left */
+      background-size: 120%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1497D4;
+    }
+
+    .container {
+      display: flex;
+      width: 60%;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    .image-column {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1497D4;
+    }
+
+    .image-upload {
+      width: 150px;
+      height: 150px;
+      border: 2px dashed #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .image-upload img {
+max-width: 100%;
+max-height: 100%;
+border: 2px solid #007bff; /* Add blue border */
+border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+
+    .registration-column {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .registration-column h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .input-box {
+      margin-bottom: 15px;
+    }
+
+    .input-box input,
+    .input-box select {
+      width: 91%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .button {
+text-align: center;
+}
+
+.button input[type="submit"] {
+background-color: #007bff;
+color: #fff;
+border: none;
+padding: 12px 20px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial box-shadow */
+}
+
+.button input[type="submit"]:hover {
+background-color: #4da6ff;
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Box-shadow on hover */
+}
+    .text {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .image-upload {
+      width: 150px;
+      height: 150px;
+      border: 2px dashed #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .image-upload input[type="file"] {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .input-group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px; /* Add margin between the input-group and the next element */
+    }
+
+    .input-group .input-box {
+      width: calc(50% - 10px); /* Adjust as needed, accounting for margin */
+      box-sizing: border-box;
+    }
+
+    /* Add margin between the two input-boxes */
+    .input-group .input-box + .input-box {
+      margin-left: 0px; /* Adjust as needed */
+    }
+
+    .login-link {
+      margin-left: 10px; /* Adjust the margin as needed */
+    }
+
+    .card {
+  background-color: #fff;
+  width: 400px;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: calc(25% - 150px); /* 75% of viewport width - half of card width */
+}
+
+
+.card-heading {
+  color: #007bff; /* Change color of "Account" to blue */
+  font-size: 24px; /* Increase font size for emphasis */
+  margin-bottom: 10px; /* Add some space between heading and form inputs */
+}
+
+  .input-box {
+    margin-bottom: 15px;
+  }
+  </style>
+
+</head>
+<body>
+    
+    <div class="card">
+        <div class="card-heading">Create Account</div>
+  <form action="AfterRegister.html">
+    <div class="input-box">
+      <input type="text" placeholder="Enter your name" required />
+    </div>
+    <div class="input-box">
+      <input type="email" placeholder="Enter your email" required />
+    </div>
+    <div class="input-box">
+      <input type="password" placeholder="Create password" required />
+    </div>
+
+    <div class="input-group">
+      <div class="input-box">
+        <input type="date" required />
+      </div>
+      <div class="input-box">
+        <select id="size" name="size">
+          <option value="" disabled selected>Select Size</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="input-box">
+      <input type="file" name="file1" accept=".pdf,.doc,.docx" multiple/>
+    </div>
+
+
+    <div class="input-box button">
+      <input type="submit" value="Register Now" />
+    </div>
+    <div class="text">
+      <p>
+        Already have an account?
+        <a href="AfterRegister.html" class="login-link" style="text-decoration: none;">
+          <span style="color: #007bff;">Login now</span>
+        </a>
+      </p>
+    </div>
+  </form>
+    </div>
+    </div>
+</body>
+</html>

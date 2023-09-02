@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="Images/logoFashion.jpeg"
+      type="image/x-icon"
+    />
+    <title>Registration</title>
+    <style>
+
+      
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      button,
+      input,
+      select,
+      textarea {
+        font-family: "Poppins Medium";
+      }
+
+      body {
+        background-image: url('Images/bg.jpg');
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        width: 60%;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        border-radius: 5px;
+      }
+
+      .image-column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #007bff;
+      }
+
+      .image-upload {
+        width: 150px;
+        height: 150px;
+        border: 2px dashed #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .image-upload img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 4px solid #FFD301 ; /* Add blue border */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+
+      .registration-column {
+        flex: 1;
+        padding: 30px;
+      }
+
+      .registration-column h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .input-box {
+        margin-bottom: 15px;
+      }
+
+      .input-box input,
+      .input-box select {
+        width: 91%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .button {
+  text-align: center;
+}
+
+.button input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial box-shadow */
+}
+
+.button input[type="submit"]:hover {
+  background-color: #4da6ff;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Box-shadow on hover */
+}
+      .text {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .image-upload {
+        width: 150px;
+        height: 150px;
+        border: 2px dashed #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .image-upload input[type="file"] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      .input-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px; /* Add margin between the input-group and the next element */
+      }
+
+      .input-group .input-box {
+        width: calc(50% - 10px); /* Adjust as needed, accounting for margin */
+        box-sizing: border-box;
+      }
+
+      /* Add margin between the two input-boxes */
+      .input-group .input-box + .input-box {
+        margin-left: 0px; /* Adjust as needed */
+      }
+
+      .login-link {
+        margin-left: 10px; /* Adjust the margin as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-column">
+        <div class="image-upload">
+          <input type="file" accept="image/*" id="imageInput" />
+          <img src="Images/UploadImg.png" alt="Upload Image" style="cursor: pointer;"/>
+        </div>
+      </div>
+
+      <div class="registration-column">
+        <h2>Create <span style="color: #007bff;">Account</span></h2>
+        <form action="AfterRegister.html">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Enter your email" required />
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Create password" required />
+          </div>
+
+          <div class="input-group">
+            <div class="input-box">
+              <input
+  placeholder="Birth Date"
+  class="textbox-n"
+  type="text"
+  onfocus="(this.type='date')"
+  id="date" />
+            </div>
+            <div class="input-box">
+              <select id="size" name="size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-box button">
+            <input type="submit" value="Register Now" />
+          </div>
+          <div class="text">
+            <p>
+              Already have an account?
+              <a
+                href="AfterRegister.html"
+                class="login-link"
+                style="text-decoration: none"
+                ><span style="color: #007bff;">Login now</span></a>
+            </p>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

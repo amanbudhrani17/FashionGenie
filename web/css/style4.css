@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f3f6;
+}
+
+:root {
+    --primary-color: #1497D4;
+}
+
+.container {
+    padding: 0 8px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+h3
+{
+    color: white;
+}
+/* header */
+header {
+    background-color: var(--primary-color);
+    height: 64px;
+}
+header .nav-container{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+}
+header .nav-container .logo {
+    display: flex;
+    min-width: 137px;
+    justify-content: flex-end;
+}
+header .nav-container .logo img{
+    width: 75px;
+}
+
+header .search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+header .search .search-container{
+    width: 540px;
+    height: 36px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
+    display: flex;
+}
+header .search .search-container input {
+    width: calc(100% - 32px);
+    padding: 16px;
+    outline: none;
+    border: none;
+}
+header .search .search-container button {
+    width: 36px;
+    height: 100%;
+    padding: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+header .login {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+header .login button {
+    width: 140px;
+    padding: 5px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+header .aimode button {
+    width: 164px;
+    border-radius: 5px;
+    padding: 9px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #1E1E1E;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button animation on hover */
+header .aimode button::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.6), transparent, rgba(255, 255, 255, 0.6));
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+header .aimode button:hover::before {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    opacity: 1;
+}
+
+
+header .become-seller {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .more{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+header .more svg {
+    margin-left: 8px;
+    rotate: -90deg;
+}
+
+header .cart {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+}
+header .cart svg {
+    margin-right: 8px;
+}
+
+.sectionDiv {
+    background-color: #FFD301 ;
+}
+/* section 1 */
+.section-1 {
+    width: 100%;
+    height: 112px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+.section-1-container{
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.section-1-item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-1-item img {
+    width: 64px;
+    height: 64px;
+}
+
+/* section 2 */
+.section-2-container {
+    margin-top: 50px;
+    height: 280px;
+    background-image: url('Images/Hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+
+/* section 3 */
+.section-3-container {
+    margin-top: 8px;
+    height: 122px;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/2848/246/image/d56a3ed6d200038a.jpg?q=50');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* section 4 */
+.section-4-container {
+    height: 60%;
+    margin-top: 25px;
+    margin-left: 138.5px;
+    width: 1300px;
+    height: 260px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.section-4-offers {
+    width: 230px;
+    height: 100%;
+
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.section-4-offers-viewall{
+    margin-top: 132px;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-4-offers-viewall button {
+    margin-top: 24px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.section-4-list {
+    height: 80%;
+    width: calc(100% - 230px);
+    display: flex;
+    overflow-x: auto;
+}
+.section-4-item{
+    width: 232px;
+    height: 100%;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-4-item img {
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+
+    transition: transform 0.3s; /* Adding the transition property */
+}
+
+.section-4-item img:hover {
+    transform: scale(1.05); /* Scaling up the image a little */
+}
+
+.section-4-item-head{
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-4-item-price {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #388e3c;
+    cursor: pointer;
+}
+.section-4-item-explore{
+    opacity: 0.6;
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* section-5 */
+.section-5 {
+    margin-top: 8px ;
+    display: flex;
+    justify-content: space-between;
+}
+.section-5 img {
+    width: 33%;
+}
+
+/* footer */
+footer {
+    margin-top: 26px;
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #878787 ;
+}
+
+
+/* chatbot */
+.containerX {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 75%;
+    height: 50%;
+    /* max-width: 800px; */
+    margin: 20px;
+    overflow-x: hidden;
+  }
+  .buttonX {
+    width: 140px;
+    padding: 5px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4E9DE7;
+    background-color: transparent;
+    border: 2px solid #4E9DE7;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .buttonX:hover {
+    background-color: #4E9DE7;
+    color: white;
+  }
+  #outputX {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 0px solid #ddd;
+  }
+  #promptInputX {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .chatForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
